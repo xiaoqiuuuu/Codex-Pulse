@@ -75,3 +75,7 @@ npm run check
 独立运行的 Codex CLI 不会把实时 app-server 事件转发给监控进程，因此 Codex Pulse 采用只读检测：结合 JSONL 事件、审批策略、会话文件占用和子进程状态判断任务状态。
 
 本地扫描与状态管理位于 `src-tauri/src/`，远程适配会把 `src/remote/remote_scanner.py` 编译进 Rust 二进制，并通过 SSH 标准输入发送到服务器执行，不在远程服务器写入脚本文件。
+
+## 许可证
+
+Codex Pulse 使用 [MIT License](LICENSE) 开源。
